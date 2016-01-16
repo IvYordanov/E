@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxscenebuilderexrcise01.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="571.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxscenebuilderexrcise01.FXMLDocumentController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <Button fx:id="Enter" layoutX="37.0" layoutY="322.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="148.0" text="Enter" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="37.0" />
+      <Button fx:id="Cancel" layoutX="531.0" layoutY="322.0" mnemonicParsing="false" onAction="#Clear" prefHeight="25.0" prefWidth="141.0" text="Clear Text" AnchorPane.bottomAnchor="37.0" AnchorPane.rightAnchor="37.0" />
+      <TextArea fx:id="text" layoutX="46.0" layoutY="328.0" prefHeight="155.0" prefWidth="635.0" promptText="Enter text" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="28.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="label" graphicTextGap="5.0" layoutX="36.0" layoutY="5.0" lineSpacing="2.0" prefHeight="305.0" prefWidth="647.0" style="-fx-background-color: yellow; -fx-border-color: black;" text="Text" textAlignment="CENTER" textOverrun="CLIP" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>
