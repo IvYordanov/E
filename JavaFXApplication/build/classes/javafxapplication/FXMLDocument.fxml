@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="420" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="45.0" layoutY="363.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="92.0" text="Въведи" AnchorPane.leftAnchor="45.0" />
+      <Button fx:id="btn" layoutX="277.0" layoutY="363.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="92.0" text="Изчисти" AnchorPane.rightAnchor="45.0" />
+      <TextField fx:id="text" layoutX="20.0" layoutY="300.0" onAction="#enter" prefHeight="25.0" prefWidth="380.0" />
+      <TextFlow fx:id="label" layoutX="103.0" layoutY="41.0" prefHeight="200.0" prefWidth="200.0" />
+    </children>
+</AnchorPane>
